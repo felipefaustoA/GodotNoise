@@ -11,6 +11,7 @@ const size := 256.0
 @export_range(4.0, 128.0, 4.0) var height := 64.0:
 	set(new_height):
 		height = new_height
+		material_override.set_shader_parameter("height", height * 2.0)
 		update_mesh()
 
 @export var noise : FastNoiseLite:
