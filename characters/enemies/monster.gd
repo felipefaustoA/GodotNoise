@@ -88,5 +88,5 @@ func start_attack():
 	$AttackSound.play()
 	animation_player.play("attack", -1, attack_speed_modifier)
 
-func do_attack(): # called from animation
+func do_attack(): 
 	attack_emitter.fire()
